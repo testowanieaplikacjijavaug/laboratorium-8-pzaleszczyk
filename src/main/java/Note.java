@@ -1,6 +1,8 @@
 import java.io.Serializable;
 import java.util.List;
 
+import org.junit.platform.commons.util.Preconditions;
+
 
 public class Note implements Serializable {
 
@@ -20,10 +22,10 @@ public class Note implements Serializable {
 	}
 	
 	private Note(String name, final float note) {
-		org.assertj.core.util.Preconditions.checkArgument(name != null, "Imi? ucznia nie mo?e by? null");
+		Preconditions.condition(name != null, "Imi? ucznia nie mo?e by? null");
 		name = name.trim();
-		org.assertj.core.util.Preconditions.checkArgument(!name.trim().isEmpty(), "Imi? ucznia nie mo?e by? puste");
-		org.assertj.core.util.Preconditions.checkArgument(note >= 2.0f && note <= 6.0f, "Niew?a?ciwa ocena");
+		Preconditions.condition(!name.trim().isEmpty(), "Imi? ucznia nie mo?e by? puste");
+		Preconditions.condition(note >= 2.0f && note <= 6.0f, "Niew?a?ciwa ocena");
 		
 		this.name = name;
 		this.note = note;
