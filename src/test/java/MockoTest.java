@@ -70,5 +70,5 @@ public class MockoTest {
         	//assertEquals(10, obj.getCube());
         
         EasyMock.verify(obj);
-	}
+       	}
 }
