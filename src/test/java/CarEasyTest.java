@@ -104,6 +104,8 @@ public class CarEasyTest {
 		assertThrows(RuntimeException.class, () -> {
 			myFerrari.getEngineTemperature();
 		});
+		
+		EasyMock.verify(myFerrari);
 	}
 
 }

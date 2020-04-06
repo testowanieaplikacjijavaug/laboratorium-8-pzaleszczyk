@@ -1,3 +1,4 @@
+import org.easymock.EasyMock;
 import org.easymock.Mock;
 import org.easymock.MockType;
 import org.easymock.TestSubject;
@@ -5,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.easymock.EasyMock.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.Arrays;
 import java.util.List;
@@ -47,7 +49,23 @@ public class FriendshipsMongoEasyMockTest {
 	
 	///NOWE TESTY
 	
+	@Test
+	public void test1(){
+		
 	
+	}
+	
+	@Test
+	public void testAddFriends(){
+		
+	
+	}
+	
+	@Test
+	public void testAreFriends(){
+		
+	
+	}
 	
 	
 }
